@@ -20,10 +20,9 @@ class PhoneBook{
             data[inname!] = innumber == nil ? "NoNumber" : innumber
         }
     }
-    func print_data(){
-        for (name,number) in data{
+    func list_data(){
+        for (name,_) in data{
             print("name:\(name)")
-            print("number:\(number)")
         }
     }
     func delete_data(){
@@ -33,14 +32,27 @@ class PhoneBook{
             data.removeValue(forKey: inname!)
         }
     }
-    func seach_data(){
-        
+    func print_data(){
+        print("Name")
+        let name:String? = readLine()
+        if data[name!] != nil {
+            print("Number is \(data[name!] ?? "")")
+        } else {
+            print("\(name! ?? "") is notfound")
+        }
     }
 }
+
+
 var data :PhoneBook = PhoneBook()
-switch readLine() {
-case "1"?:data.add_data()
-case "2"?:data.print_data()
-case "3"?:data.seach_data()
-default : break
-}
+var select:String?
+repeat {
+    select = readLine()
+    switch select {
+    case "1"?:data.add_data()
+    case "2"?:data.print_data()
+    case "3"?:data.list_data()
+    case "4"?:data.delete_data()
+    default : break
+    }
+} while select != "5"
