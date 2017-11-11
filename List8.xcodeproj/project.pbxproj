@@ -45,6 +45,7 @@
 				3B400C9D1FB50F9F003B0C5B /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		3B400C9D1FB50F9F003B0C5B /* Products */ = {
 			isa = PBXGroup;
@@ -228,6 +229,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
@@ -237,6 +239,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KFDQC43GK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -246,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KFDQC43GK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -261,7 +265,7 @@
 				3B400CA21FB50F9F003B0C5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3B400CA31FB50F9F003B0C5B /* Build configuration list for PBXNativeTarget "List8" */ = {
 			isa = XCConfigurationList;
@@ -270,7 +274,7 @@
 				3B400CA51FB50F9F003B0C5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
